@@ -2,7 +2,11 @@ import Head from "next/head"
 import { Box, Flex, Hide } from "@chakra-ui/react"
 import Navbar from "../components/navbar"
 import Section from "../components/section"
-
+import HomeSec from "../components/sections/home"
+import About from "../components/sections/about"
+import Projects from "../components/sections/projects"
+import Experience from "../components/sections/experience"
+import Contact from "../components/sections/contact"
 export default function Home() {
   return (
     <>
@@ -18,13 +22,19 @@ export default function Home() {
         </Hide>
         <Flex ml={{ base: "0px", md: "200px" }} direction="column">
           <Section title="Home" element="home">
-            <Box w="200px" bg="white" h="1000px"></Box>
+            <HomeSec />
           </Section>
           <Section title="About Me" element="about">
-            <Box w="200px" bg="white" h="100px"></Box>
+            <About />
           </Section>
           <Section title="Projects" element="projects">
-            <Box w="200px" bg="white" h="1000px"></Box>
+            <Projects />
+          </Section>
+          <Section title="Experience" element="experience">
+            <Experience />
+          </Section>
+          <Section title="Contact" element="contact">
+            <Contact />
           </Section>
         </Flex>
       </main>

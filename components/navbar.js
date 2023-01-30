@@ -122,7 +122,7 @@ const Navbar = () => {
             </Flex>
           </Link>
         </Button>
-        <Button
+        {/* <Button
           className="nav-item"
           variant="link"
           mr="10px"
@@ -136,12 +136,12 @@ const Navbar = () => {
             duration={300}
             isDynamic={true}
           >
-            <Flex direction="row" alignItems="center">
-              {/* <Icon as={FaCode} mr={2} /> */}
-              <Text>Technologies</Text>
+            <Flex direction="row" alignItems="center"> */}
+        {/* <Icon as={FaCode} mr={2} /> */}
+        {/* <Text>Technologies</Text>
             </Flex>
           </Link>
-        </Button>
+        </Button> */}
         <Button
           className="nav-item"
           variant="link"
